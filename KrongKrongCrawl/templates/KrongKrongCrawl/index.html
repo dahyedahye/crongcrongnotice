@@ -1,0 +1,71 @@
+{% load staticfiles %}
+<meta charset="utf-8">
+<html lang="en">
+    <head>
+    <link rel ="shortcut icon" type = "image/png" href="{% static 'css/crong_logo3.png' %}" />
+    <link href="//fonts.googleapis.com/earlyaccess/notosanskr.css">
+    <link href="//fonts.googleapis.com/earlyaccess/nanumgothic.css">
+    <link href="//fonts.googleapis.com/earlyaccess/nanumgothic.css">
+    <link href="https://fonts.googleapis.com/css?family=Alfa+Slab+One|Anton|Archivo+Black|Bad+Script|Fredericka+the+Great|Oleo+Script|Pacifico|Ultra" rel="stylesheet">
+        <title>CAU NOTICES</title>
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+        <link rel="stylesheet" href="{% static 'css/blog.css' %}">
+    </head>
+    <body>
+        <div class="page-header">
+            <img src="{% static 'css/cau_logo.png' %}" type = "image/png" alt="Responsive image" id = "cau_logo">
+            <h1><img src="{% static 'css/crong_icon2.png' %}" type = "image/png" alt="Responsive image" id = "crong_icon2">CAU NOTICES</h1>       
+        </div>
+        <br />
+        <div class="notice">
+            <h2><a href="https://www.cau.ac.kr/04_ulife/causquare/notice/notice_list.php?bbsId=cau_notice" id="noti">중앙대학교</a></h2>
+            <br />
+            {% for cauData in cauDatas  %}
+            <p><a href="{{ cauData.link }}" id="data">{{ cauData.title }}</a></p>
+            {% endfor %}
+            <br />
+            <br />
+        </div>
+        <div class="notice">
+            <h2><a href="http://society.cau.ac.kr/community/notice/List.asp" id="noti">사회과학대학</a></h2>
+            <br />
+            {% for socialData in socialDatas  %}
+            <p><a href="{{ socialData.link }}" id="data">{{ socialData.title }}</a></p>
+            {% endfor %}
+            <br />
+            <br />
+        </div>
+        <div class="notice">
+            <h2><a href="http://bne.cau.ac.kr/bneNews/notice/list.php" id="noti">경영경제대학</a></h2>
+            <br />
+            {% for bisData in bisDatas  %}
+            <p><a href="{{ bisData.link }}" id="data">{{ bisData.title }}</a></p>
+            {% endfor %}
+            <br />
+            <br />
+        </div>
+        <div class="notice">
+            <h2><a href="http://e3home.cau.ac.kr/20141201/sub08/sub01.php" id="noti">전기전자공학부</a></h2>
+            <br />
+            {% for electricData in electricDatas  %}
+            <p><a href="{{ electricData.link }}" id="data">{{ electricData.title }}</a></p>
+            {% endfor %}
+            <br />
+            <br />
+        </div>        
+        <div class="notice">
+            <h2><a href="http://cse.cau.ac.kr/20141201/sub05/sub0503.php" id="noti">컴퓨터공학부</a></h2>
+            <br />
+            {% for cmpengData in cmpengDatas  %}
+            <p><a href="{{ cmpengData.link }}" id="data">{{ cmpengData.title }}</a></p>
+            {% endfor %}
+            <br />
+            <br />
+        </div>       
+    </body>
+    <footer class="site-footer">
+        <p class="text-right">by.CRONGCRONG <img src="{% static 'css/crong_icon.png' %}" type = "image/png" alt="Responsive image" id = "crong_icon"></p> 
+    </footer>  
+
+</html>

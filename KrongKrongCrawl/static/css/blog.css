@@ -1,0 +1,75 @@
+h1 {
+    color: 004C97;    
+    font-family: 'Alfa Slab One', cursive;
+}
+
+.page-header {
+    background-color: 004C97;
+    margin-top: 0;
+    padding: 20px 20px 20px 40px;
+}
+
+.page-header h1{
+    
+    color: #ffffff;
+    font-size: 60pt;
+    padding: 20px 20px 20px 40px;
+
+
+}
+
+#cau_logo {
+  width: 70px;
+  height: auto;
+  margin-left: 850;
+}
+
+#crong_icon2 {
+  width: 150px;
+  height: auto;
+  margin-left: 120;
+}
+
+
+.page-header p {
+    color: #ffffff;
+    font-family: 'Pacifico', cursive;
+    padding-left: 270px;
+}
+
+#noti {
+    color: 004C97;
+    font-family: 'Nanum Gothic', sans-serif;
+    margin-left: 40px;
+    font-weight: bold;
+}
+
+#data {
+    color: black;
+    font-family: 'Nanum Gothic', sans-serif;
+    padding-left: 40px;
+}
+
+.site-footer {
+    background-color: #E9EBEE;
+    margin-bottom: 0;
+    padding: 20px 20px 10px 10px;
+}
+
+.site-footer p {
+    color: 004C97;
+    font-family: 'Pacifico', cursive;
+    font-size: 17pt
+}
+
+#crong_icon {
+  width: 35px;
+  height: auto;
+}
+
+
+
+
+
+
+
